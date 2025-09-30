@@ -91,3 +91,9 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+### Excluded Personal Content
+
+This license applies to all code, scripts, and configuration in this repository.
+It does not cover personal content such as photographs, resumes/CV,
+or any files located under `public/personal` or `src/assets/personal`.
