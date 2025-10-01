@@ -1,5 +1,6 @@
 import projects, { type Project } from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
+import '../styles/projects.css'
 
 const Projects = () => {
   return (

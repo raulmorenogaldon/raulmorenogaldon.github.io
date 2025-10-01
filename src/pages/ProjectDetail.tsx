@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import projects, { type Project } from '../data/projects'
+import '../styles/projects.css'
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>()

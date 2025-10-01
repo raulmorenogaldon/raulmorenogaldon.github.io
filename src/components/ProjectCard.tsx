@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Project } from '../data/projects'
+import '../styles/projects.css'
 
 type ProjectCardProps = Pick<
   Project,

@@ -1,0 +1,34 @@
+.footer {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark), var(--primary-light));
+}
+
+.footer__highlight {
+  color: #38bdf8;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.footer__highlight:hover {
+  color: #0ea5e9;
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

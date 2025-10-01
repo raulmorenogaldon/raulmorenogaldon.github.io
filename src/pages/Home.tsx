@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import profileImg from '../assets/personal/profile.jpg'
 import projects, { type Project } from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
+import '../styles/home.css'
 
 const Home = () => {
   const featuredProjects = projects.slice(0, 2)
