@@ -77,7 +77,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-light);
+  opacity: 0.1;
   top: 0;
   left: -100%;
   transform: skewX(-15deg);
@@ -87,7 +88,7 @@
 .button:focus,
 .button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 15px 30px var(--primary-focus);
 }
 
 .button:hover::after {
@@ -101,19 +102,21 @@
 }
 
 .button--primary:hover {
-  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--bg-light);
+  opacity: 0.9;
 }
 
 .button--ghost {
   background: transparent;
   color: var(--primary-color);
-  border-color: rgba(37, 99, 235, 0.4);
+  border-color: var(--primary-light-alpha);
   position: relative;
 }
 
 .button--ghost:hover {
   color: var(--primary-dark);
-  border-color: rgba(37, 99, 235, 0.8);
+  border-color: var(--primary-color);
   background-color: var(--primary-very-light);
 }
 
@@ -188,18 +191,18 @@
 .pill-list li {
   background-color: var(--primary-light);
   color: var(--primary-color);
-  padding: 0.4rem 0.85rem;
+  padding: 0.1rem 0.85rem;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 600;
   transition: transform var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
-  border: 1px solid rgba(37, 99, 235, 0.1);
+  border: 1px solid var(--primary-very-light);
 }
 
 .pill-list li:hover {
   transform: translateY(-2px) scale(1.05);
   background-color: var(--primary-very-light);
-  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.15);
+  box-shadow: 0 4px 8px var(--primary-focus);
 }
 
 .eyebrow {

@@ -11,18 +11,17 @@ const Home = () => {
     <section className="page home">
       <div className="hero">
         <div className="hero__copy">
-          <p className="eyebrow">Hi, I'm Your Name</p>
-          <h1>Building thoughtful digital experiences.</h1>
+          <p className="eyebrow">Hi, I'm Raúl</p>
+          <h1>Wanting to craf playful, performant game experiences.</h1>
           <p className="lead">
-            I'm a <strong>frontend developer</strong> focused on crafting
-            delightful interfaces and performant web applications.
+            I’m looking to start in the <strong>videogame industry</strong>, helping create enjoyable, smart, and smooth gaming experiences
           </p>
           <div className="hero__actions">
             <Link to="/projects" className="button button--primary">
               View projects
             </Link>
-            <Link to="/contact" className="button button--ghost">
-              Get in touch
+            <Link to="/resume" className="button button--ghost">
+              Contact me
             </Link>
           </div>
         </div>

@@ -22,12 +22,12 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(160deg, var(--bg-light) 0%, var(--bg-gray) 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  line-height: 1.2;
+  margin-top: 0.1em;
+  line-height: 1.4em;
   color: var(--text-dark);
 }
 
@@ -87,15 +87,15 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: var(--bg-light);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: var(--bg-gray);
   border-radius: 6px;
-  border: 3px solid #f1f5f9;
+  border: 3px solid var(--bg-light);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: var(--primary-light);
 }

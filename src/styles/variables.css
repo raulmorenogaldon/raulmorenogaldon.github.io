@@ -1,15 +1,18 @@
 :root {
-  --primary-color: #2563eb;
-  --primary-dark: #1d4ed8;
-  --primary-light: rgba(37, 99, 235, 0.12);
-  --primary-very-light: rgba(37, 99, 235, 0.05);
-  --primary-focus: rgba(37, 99, 235, 0.2);
-  --text-dark: #0f172a;
-  --text-muted: rgba(15, 23, 42, 0.6);
+  --primary-color: #4c1d95; /* Darker Purple */
+  --primary-rgb: 76, 29, 149; /* RGB values for transparency */
+  --primary-dark: #3b0764; /* Very Dark Purple */
+  --primary-light: #e9d5ff; /* Light purple - solid color for backgrounds */
+  --primary-light-alpha: rgba(76, 29, 149, 0.12); /* Transparent light purple for borders */
+  --primary-very-light: rgba(76, 29, 149, 0.05);
+  --primary-focus: rgba(76, 29, 149, 0.2);
+  --text-dark: #1a0b2e;
+  --text-muted: rgba(26, 11, 46, 0.6);
   --text-light: rgba(15, 23, 42, 0.75);
   --text-very-light: rgba(15, 23, 42, 0.55);
   --bg-light: #f8fafc;
   --bg-gray: #e2e8f0;
+  --bg-light-alpha: rgba(248, 250, 252, 0.95);
   --border-light: rgba(15, 23, 42, 0.08);
   --card-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   --card-shadow-hover: 0 16px 40px rgba(15, 23, 42, 0.12);

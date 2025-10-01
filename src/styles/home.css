@@ -17,7 +17,7 @@
   background: linear-gradient(90deg, 
     transparent, 
     var(--border-light), 
-    var(--primary-light), 
+    var(--primary-light-alpha), 
     var(--border-light), 
     transparent
   );

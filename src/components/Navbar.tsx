@@ -4,8 +4,7 @@ import '../styles/navbar.css'
 const navItems = [
   { path: '/', label: 'Home' },
   { path: '/projects', label: 'Projects' },
-  { path: '/resume', label: 'Résumé' },
-  { path: '/contact', label: 'Contact' },
+  { path: '/resume', label: 'Resume & Contact' },
 ]
 
 const Navbar = () => {
