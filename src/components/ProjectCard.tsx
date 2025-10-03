@@ -17,7 +17,7 @@ const ProjectCard = ({
   repoUrl,
 }: ProjectCardProps) => {
   return (
-    <article className="project-card">
+    <article className={`project-card ${!coverImage ? 'project-card--no-image' : ''}`}>
       {coverImage && (
         <img
           src={coverImage}

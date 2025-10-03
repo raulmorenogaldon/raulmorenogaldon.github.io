@@ -18,7 +18,7 @@ const Home = () => {
           </p>
           <div className="hero__actions">
             <Link to="/projects" className="button button--primary">
-              View projects
+              View personal projects
             </Link>
             <Link to="/resume" className="button button--ghost">
               Contact me

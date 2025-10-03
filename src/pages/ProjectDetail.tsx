@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import projects, { type Project } from '../data/projects'
+import ProjectContentRenderer from '../components/ProjectContentRenderer'
 import '../styles/projects.css'
 
 const ProjectDetail = () => {
@@ -28,42 +29,18 @@ const ProjectDetail = () => {
     highlights,
     liveUrl,
     repoUrl,
-    period,
-    role,
+    date,
+    content,
   } = project
 
   return (
     <section className="page project-detail">
       <header className="page__header">
         <h1>{title}</h1>
-        <p>{description}</p>
         <p className="project-detail__meta">
-          <span>{role}</span>
-          <span>·</span>
-          <span>{period}</span>
+          <span>{date}</span>
         </p>
-        <div className="page__cta">
-          {liveUrl && (
-            <a
-              href={liveUrl}
-              className="button button--primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View live site
-            </a>
-          )}
-          {repoUrl && (
-            <a
-              href={repoUrl}
-              className="button button--ghost"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View source code
-            </a>
-          )}
-        </div>
+        <p>{description}</p>
       </header>
 
       {coverImage && (
@@ -92,6 +69,35 @@ const ProjectDetail = () => {
           ))}
         </ul>
       </section>
+
+      <div className="page__cta">
+        {liveUrl && (
+          <a
+            href={liveUrl}
+            className="button button--primary"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View live site
+          </a>
+        )}
+        {repoUrl && (
+          <a
+            href={repoUrl}
+            className="button button--ghost"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View source code
+          </a>
+        )}
+      </div>
+
+      {content && (
+        <div className="project-content-wrapper">
+          <ProjectContentRenderer content={content} />
+        </div>
+      )}
 
       <Link to="/projects" className="button button--ghost">
         ← Back to projects

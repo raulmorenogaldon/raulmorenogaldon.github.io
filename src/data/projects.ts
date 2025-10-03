@@ -1,5 +1,9 @@
 import projectOneImage from '../assets/personal/project1.png'
 import projectTwoImage from '../assets/personal/project2.png'
+import type { ProjectContent } from '../content/projectContentTypes'
+import designSystemOverhaulContent from '../content/design-system-overhaul'
+import analyticsDashboardContent from '../content/analytics-dashboard'
+import portfolioWebsiteContent from '../content/portfolio-website'
 
 export type Project = {
   slug: string
@@ -11,11 +15,26 @@ export type Project = {
   coverImage?: string
   liveUrl?: string
   repoUrl?: string
-  role: string
-  period: string
+  date: string
+  content?: ProjectContent
 }
 
 const projects: Project[] = [
+  {
+    slug: 'portfolio-website',
+    title: '(This) Portfolio Website',
+    summary: 'A modern, performant portfolio site with a custom content management system.',
+    description:
+      'Built a responsive portfolio website with React, TypeScript, and Vite. Used AI tools and implemented a custom content system for easy project updates.',
+    technologies: ['React', 'TypeScript', 'Vite', 'CSS'],
+    highlights: [
+      'Leveraged AI copilot to create a stylish webpage for my personal portfolio.',
+      'Used Vite to create the scaffold project.',
+    ],
+    date: '2025',
+    liveUrl: window.location.origin,
+    content: portfolioWebsiteContent,
+  },
   {
     slug: 'design-system-overhaul',
     title: 'Design System Overhaul',
@@ -28,11 +47,11 @@ const projects: Project[] = [
       'Defined contributor workflows and tooling that reduced UI defects by 36%.',
       'Launched design tokens powering theming across web and mobile surfaces.',
     ],
-    role: 'Lead Frontend Engineer',
-    period: '2024 — Present',
+    date: '2024',
     coverImage: projectOneImage,
     liveUrl: 'https://example.com/design-system',
     repoUrl: 'https://github.com/your-username/design-system',
+    content: designSystemOverhaulContent,
   },
   {
     slug: 'analytics-dashboard',
@@ -46,11 +65,11 @@ const projects: Project[] = [
       'Introduced data visualizations that increased retention by 18%.',
       'Deployed infrastructure with automated performance regression alerts.',
     ],
-    role: 'Senior Frontend Developer',
-    period: '2022 — 2024',
+    date: '2022 — 2024',
     coverImage: projectTwoImage,
     liveUrl: 'https://example.com/analytics-dashboard',
     repoUrl: 'https://github.com/your-username/analytics-dashboard',
+    content: analyticsDashboardContent,
   },
 ]
 

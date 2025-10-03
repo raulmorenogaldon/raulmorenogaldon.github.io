@@ -10,7 +10,7 @@ const Resume = () => {
       <section className="summary summary--full-width">
         <h2>Professional Summary</h2>
         <p>
-          I’m a junior gameplay / AI programmer (remote) transitioning from cloud and HPC engineering, eager to start my first studio role. In personal projects I’ve used Unity DOTS/ECS to build a 3D multiplayer FPS prototype — server-authoritative networking, synchronized animation and server-side shot validation — that runs 1,000+ zombies, giving me some hands-on experience in large-scale performance and AI behavior. I’m advanced in Python and C, comfortable with C#, JavaScript and other languages (I love programming); I also bring strong CI/CD and realtime optimization experience, systems thinking, and a fast-learning, can-do attitude ready to contribute to gameplay and AI development.
+          I’m a gameplay / AI programmer transitioning from cloud and HPC engineering, eager to start my first studio role. In personal projects I’ve used Unity DOTS/ECS to build a 3D multiplayer FPS prototype — server-authoritative networking, synchronized animation and server-side shot validation — that runs 1,000+ zombies, giving me some hands-on experience in large-scale performance and AI behavior. I’m advanced in Python and C, comfortable with C#, JavaScript and other languages (I love programming); I also bring strong CI/CD and realtime optimization experience, systems thinking, and a fast-learning, can-do attitude ready to contribute to gameplay and AI development.
         </p>
       </section>
 
@@ -22,7 +22,7 @@ const Resume = () => {
             <ul className="timeline">
               <li>
                 <h3>Azure Cloud Solutions Architect · Keepler Data Tech S.L.</h3>
-                <p className="timeline__meta">Sept 2021 — Sept 2025 · Spain</p>
+                <p className="timeline__meta">Sept 2021 — Sept 2025 · Spain (Full remote)</p>
                 <ul>
                   <li>Design and deliver data-focused solutions hosted in Microsoft Azure Cloud for various clients.</li>
                   <li>Work on diverse projects including landing zones, data ingestion platforms, IoT platforms, and AI solutions.</li>
@@ -32,7 +32,7 @@ const Resume = () => {
 
               <li>
                 <h3>Azure Infrastructure Specialist · IBM GSA Spain</h3>
-                <p className="timeline__meta">May 2020 — Sept 2021 · Spain</p>
+                <p className="timeline__meta">May 2020 — Sept 2021 · Spain (Full remote)</p>
                 <ul>
                   <li>Provided high-level operations support for client systems hosted in Microsoft Azure Cloud.</li>
                   <li>
@@ -44,7 +44,7 @@ const Resume = () => {
               
               <li>
                 <h3>Data Platform Engineer · SolidQ S.A.</h3>
-                <p className="timeline__meta">June 2019 — May 2020 · Spain</p>
+                <p className="timeline__meta">June 2019 — May 2020 · Spain (Full remote)</p>
                 <ul>
                   <li>Provided support and expertise for clients using Microsoft Azure solutions.</li>
                   <li>Created automation solutions using Azure Functions, Azure Automation, and PowerShell/CLI to reduce operational overhead.</li>
