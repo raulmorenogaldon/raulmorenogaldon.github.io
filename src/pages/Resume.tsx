@@ -18,7 +18,7 @@ const Resume = () => {
         {/* Main content on the left */}
         <main className="resume__content">
           <section>
-            <h2>Work Experience</h2>
+            <h2>Professional Experience</h2>
             <ul className="timeline">
               <li>
                 <h3>Azure Cloud Solutions Architect · Keepler Data Tech S.L.</h3>

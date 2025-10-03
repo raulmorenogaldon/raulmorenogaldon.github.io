@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <section className="page projects">
       <header className="page__header">
-        <h1>Projects</h1>
-        <p>A selection of work highlighting problem-solving and product impact.</p>
+        <h1>Personal Projects</h1>
+        <p>A selection of work done in my free time, highlighting problem-solving and skills.</p>
       </header>
 
       <div className="project-grid">

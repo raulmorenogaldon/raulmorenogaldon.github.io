@@ -23,10 +23,6 @@
   transition: color var(--transition-fast);
 }
 
-.footer__highlight:hover {
-  color: var(--primary-dark);
-}
-
 @media print {
   .footer {
     display: none;

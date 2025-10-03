@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #4c1d95; /* Darker Purple */
+  --primary-color: #5b26aa; /* Darker Purple */
   --primary-rgb: 76, 29, 149; /* RGB values for transparency */
-  --primary-dark: #3b0764; /* Very Dark Purple */
+  --primary-dark: #34045a; /* Very Dark Purple */
   --primary-light: #e9d5ff; /* Light purple - solid color for backgrounds */
   --primary-light-alpha: rgba(76, 29, 149, 0.12); /* Transparent light purple for borders */
   --primary-very-light: rgba(76, 29, 149, 0.05);

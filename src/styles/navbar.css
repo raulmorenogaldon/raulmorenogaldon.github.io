@@ -16,6 +16,7 @@
 }
 
 .navbar__brand {
+  margin-left: 1.0rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   font-size: 1.25rem;
@@ -28,6 +29,7 @@
 .navbar__nav {
   display: flex;
   gap: 1.5rem;
+  margin-right: 1.0rem;
 }
 
 .navbar__link {

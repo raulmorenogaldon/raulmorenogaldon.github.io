@@ -12,7 +12,7 @@ const Home = () => {
       <div className="hero">
         <div className="hero__copy">
           <p className="eyebrow">Hi, I'm Raúl</p>
-          <h1>Wanting to craf playful, performant game experiences.</h1>
+          <h1>Ready to craft playful, performant game experiences.</h1>
           <p className="lead">
             I’m looking to start in the <strong>videogame industry</strong>, helping create enjoyable, smart, and smooth gaming experiences
           </p>

@@ -5,9 +5,9 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <p>© {year} Your Name. All rights reserved.</p>
+      <p>© {year} Raúl Moreno Galdón. All rights reserved.</p>
       <p>
-        Built with <span className="footer__highlight">React + Vite</span>
+        Built with <span className="footer__highlight">React + Vite + AI</span>
       </p>
     </footer>
   )
