@@ -1,9 +1,7 @@
-import projectOneImage from '../assets/personal/project1.png'
-import projectTwoImage from '../assets/personal/project2.png'
+import bobImage from '../assets/projects/bob/bobImage.jpg'
 import type { ProjectContent } from '../content/projectContentTypes'
-import designSystemOverhaulContent from '../content/design-system-overhaul'
-import analyticsDashboardContent from '../content/analytics-dashboard'
 import portfolioWebsiteContent from '../content/portfolio-website'
+import bobModel3DContent from '../content/3d-model-minion'
 
 export type Project = {
   slug: string
@@ -36,40 +34,21 @@ const projects: Project[] = [
     content: portfolioWebsiteContent,
   },
   {
-    slug: 'design-system-overhaul',
-    title: 'Design System Overhaul',
-    summary: 'Led the redesign and rollout of a modular design system for a SaaS platform.',
+    slug: '3d-model-minion',
+    title: 'Bob 3D Rigged Model',
+    summary: 'Complete 3D character creation workflow: sculpting, retopology, and rigging.',
     description:
-      'Partnered with product design and engineering to rebuild a scalable design system, enabling faster delivery across seven product squads.',
-    technologies: ['React', 'TypeScript', 'Storybook', 'Tailwind CSS'],
+      'Full production pipeline for creating Bob the Minion in Blender 4.0. Starting from reference images, I sculpted high-detail organic forms using a digital pen tablet, performed clean retopology for animation-ready geometry, and implemented a complete rigging system with Rigify for expressive character animation.',
+    technologies: ['Blender 4.0', '3D Modeling', 'Digital Sculpting', 'Retopology', 'Character Rigging', 'Rigify'],
     highlights: [
-      'Delivered an accessible component library with WCAG 2.1 AA coverage.',
-      'Defined contributor workflows and tooling that reduced UI defects by 36%.',
-      'Launched design tokens powering theming across web and mobile surfaces.',
+      'High-detail sculpting with digital pen tablet for organic character forms',
+      'Optimized retopology with clean edge flow for animation performance',
+      'Complete Rigify-based rig with facial controls for expressive animation',
+      'Non-destructive workflow with organized scene hierarchy',
     ],
-    date: '2024',
-    coverImage: projectOneImage,
-    liveUrl: 'https://example.com/design-system',
-    repoUrl: 'https://github.com/your-username/design-system',
-    content: designSystemOverhaulContent,
-  },
-  {
-    slug: 'analytics-dashboard',
-    title: 'Analytics Dashboard',
-    summary: 'Interactive analytics dashboards with real-time collaboration features.',
-    description:
-      'Architected a multi-tenant analytics platform with customizable widgets, live collaboration, and offline-ready syncing.',
-    technologies: ['React', 'Vite', 'Supabase', 'D3.js'],
-    highlights: [
-      'Implemented optimistic UI updates for a snappy editing experience.',
-      'Introduced data visualizations that increased retention by 18%.',
-      'Deployed infrastructure with automated performance regression alerts.',
-    ],
-    date: '2022 — 2024',
-    coverImage: projectTwoImage,
-    liveUrl: 'https://example.com/analytics-dashboard',
-    repoUrl: 'https://github.com/your-username/analytics-dashboard',
-    content: analyticsDashboardContent,
+    date: '2023',
+    coverImage: bobImage,
+    content: bobModel3DContent,
   },
 ]
 
