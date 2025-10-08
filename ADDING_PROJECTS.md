@@ -95,6 +95,9 @@ Your changes:
 // Image
 { type: 'image', src: imagePath, alt: 'Description', caption: 'Optional' }
 
+// GIF
+{ type: 'gif', src: gifPath, alt: 'Description', caption: 'Optional' }
+
 // List
 { type: 'list', items: ['Item 1', 'Item 2'] }
 

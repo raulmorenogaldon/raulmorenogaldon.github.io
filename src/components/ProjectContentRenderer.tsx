@@ -3,6 +3,7 @@ import type {
   HeadingBlock,
   ParagraphBlock,
   ImageBlock,
+  VideoBlock,
   ListBlock,
   QuoteBlock,
   CodeBlock,
@@ -23,6 +24,8 @@ const ProjectContentRenderer = ({ content }: ProjectContentRendererProps) => {
         return renderParagraph(block, index)
       case 'image':
         return renderImage(block, index)
+      case 'video':
+        return renderVideo(block, index)
       case 'list':
         return renderList(block, index)
       case 'quote':
@@ -57,6 +60,29 @@ const ProjectContentRenderer = ({ content }: ProjectContentRendererProps) => {
     return (
       <figure key={index} className="content-image">
         <img src={block.src} alt={block.alt} loading="lazy" />
+        {block.caption && <figcaption>{block.caption}</figcaption>}
+      </figure>
+    )
+  }
+
+  const renderVideo = (block: VideoBlock, index: number) => {
+    // Check if the source is a video file (webm, mp4, etc.)
+    const isVideo = /\.(webm|mp4|mov)$/i.test(block.src)
+    
+    return (
+      <figure key={index} className="content-image content-video">
+        {isVideo ? (
+          <video 
+            src={block.src} 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            aria-label={block.alt}
+          />
+        ) : (
+          <img src={block.src} alt={block.alt} loading="lazy" />
+        )}
         {block.caption && <figcaption>{block.caption}</figcaption>}
       </figure>
     )

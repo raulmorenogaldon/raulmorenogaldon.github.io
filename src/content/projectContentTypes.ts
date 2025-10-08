@@ -4,6 +4,7 @@ export type ContentBlock =
   | HeadingBlock
   | ParagraphBlock
   | ImageBlock
+  | VideoBlock
   | ListBlock
   | QuoteBlock
   | CodeBlock
@@ -22,6 +23,13 @@ export interface ParagraphBlock {
 
 export interface ImageBlock {
   type: 'image'
+  src: string
+  alt: string
+  caption?: string
+}
+
+export interface VideoBlock {
+  type: 'video'
   src: string
   alt: string
   caption?: string

@@ -1,7 +1,9 @@
 import bobImage from '../assets/projects/bob/bobImage.jpg'
+import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
 import bobModel3DContent from '../content/3d-model-minion'
+import zombieCommanderContent from '../content/zombie-commander'
 
 export type Project = {
   slug: string
@@ -49,6 +51,26 @@ const projects: Project[] = [
     date: '2023',
     coverImage: bobImage,
     content: bobModel3DContent,
+  },
+  {
+    slug: 'zombie-commander',
+    title: 'Zombie Commander',
+    summary: 'An asymmetric multiplayer game where one player commands massive zombie hordes while survivors fight to complete objectives.',
+    description:
+      'Developed an innovative asymmetric multiplayer experience using Unity 6 and ECS (Entity Component System) to handle hundreds of entities simultaneously. Players choose between commanding overwhelming zombie swarms with RTS-style controls or surviving as FPS characters completing dynamic objectives. Built with DOTS for exceptional performance, Netcode for Entities for multiplayer, and the Latios Framework for ECS-compatible animations. Features advanced systems including animation-synchronized hit detection with dynamic hurtboxes, behavior tree AI, and strategic spawn point management.',
+    technologies: ['Unity 6', 'C#', 'ECS/DOTS', 'Netcode for Entities', 'Animation Sync', 'Behavior Trees'],
+    highlights: [
+      'Implemented Unity ECS/DOTS architecture enabling hundreds of zombies with optimal multi-core CPU performance',
+      'Animation system with network synchronization for multiplayer consistency',
+      'Developed sophisticated two-stage hit detection with animation-driven hurtbox positioning for precise damage',
+      'Created asymmetric multiplayer gameplay with distinct RTS zombie commander and FPS survivor roles',
+      'Designed dynamic objectives system with AI survivors capable of solo play against player-controlled hordes',
+    ],
+    date: '2024',
+    coverImage: zombieCommanderImage,
+    liveUrl: '',
+    repoUrl: '',
+    content: zombieCommanderContent,
   },
 ]
 

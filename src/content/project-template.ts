@@ -13,7 +13,8 @@ import type { ProjectContent } from './projectContentTypes'
  * Available block types:
  * - heading: Section titles (levels 1-6)
  * - paragraph: Regular text content
- * - image: Images with optional captions
+ * - image: Static images with optional captions
+ * - video: Animated content (webm, mp4, gif) with optional captions
  * - list: Ordered or unordered lists
  * - quote: Blockquotes with optional author attribution
  * - code: Code snippets with syntax highlighting
@@ -56,6 +57,12 @@ const projectTemplateContent: ProjectContent = [
     src: '/path/to/your/image.png',
     alt: 'Description of the image',
     caption: 'Optional caption for the image',
+  },
+  {
+    type: 'video',
+    src: '/path/to/your/animation.webm',
+    alt: 'Description of the animated video',
+    caption: 'Optional caption for the video (supports webm, mp4, gif)',
   },
   {
     type: 'quote',

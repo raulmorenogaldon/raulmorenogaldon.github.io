@@ -38,9 +38,8 @@ const ProjectDetail = () => {
       <header className="page__header">
         <h1>{title}</h1>
         <p className="project-detail__meta">
-          <span>{date}</span>
+          <span className="project-detail__date">{date}</span>
         </p>
-        <p>{description}</p>
       </header>
 
       {coverImage && (
@@ -52,46 +51,60 @@ const ProjectDetail = () => {
         />
       )}
 
-      <section className="section">
-        <h2>Highlights</h2>
-        <ul className="bullet-list">
-          {highlights.map((item: string) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="section">
-        <h2>Tech stack</h2>
-        <ul className="pill-list">
-          {technologies.map((tech: string) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
-      </section>
-
-      <div className="page__cta">
-        {liveUrl && (
-          <a
-            href={liveUrl}
-            className="button button--primary"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View live site
-          </a>
-        )}
-        {repoUrl && (
-          <a
-            href={repoUrl}
-            className="button button--ghost"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View source code
-          </a>
-        )}
+      <div className="project-detail__overview">
+        <p className="project-detail__description">{description}</p>
       </div>
+
+      <div className="project-detail__info-grid">
+        <section className="project-detail__card">
+          <h2 className="project-detail__card-title">
+            <span className="project-detail__icon">✨</span>
+            Highlights
+          </h2>
+          <ul className="project-detail__highlights">
+            {highlights.map((item: string) => (
+              <li key={item.substring(0, 50)}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="project-detail__card project-detail__card--tech">
+          <h2 className="project-detail__card-title">
+            <span className="project-detail__icon">🛠️</span>
+            Tech Stack
+          </h2>
+          <ul className="pill-list">
+            {technologies.map((tech: string) => (
+              <li key={tech}>{tech}</li>
+            ))}
+          </ul>
+        </section>
+      </div>
+
+      {(liveUrl || repoUrl) && (
+        <div className="page__cta">
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              className="button button--primary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live site
+            </a>
+          )}
+          {repoUrl && (
+            <a
+              href={repoUrl}
+              className="button button--ghost"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View source code
+            </a>
+          )}
+        </div>
+      )}
 
       {content && (
         <div className="project-content-wrapper">
@@ -99,7 +112,7 @@ const ProjectDetail = () => {
         </div>
       )}
 
-      <Link to="/projects" className="button button--ghost">
+      <Link to="/projects" className="button button--ghost project-detail__back">
         ← Back to projects
       </Link>
     </section>

@@ -99,6 +99,32 @@ import screenshot from '../assets/personal/my-screenshot.png'
 }
 ```
 
+### Video
+
+Animated content (videos or GIFs) with optional captions. Supports webm, mp4, and gif formats. Video files will autoplay, loop, and be muted.
+
+```typescript
+{
+  type: 'video',
+  src: '/path/to/animation.webm',
+  alt: 'Descriptive alt text',
+  caption: 'Optional caption', // optional
+}
+```
+
+**Note:** Import video files from `src/assets/` just like images. WebM format is recommended for best performance:
+
+```typescript
+import animationDemo from '../assets/projects/my-project/demo.webm'
+
+// Then use in content:
+{
+  type: 'video',
+  src: animationDemo,
+  alt: 'Application demo animation',
+}
+```
+
 ### List
 
 Unordered or ordered lists.
@@ -232,6 +258,7 @@ To customize styles, edit that CSS file. The component uses these CSS classes:
 - `.content-heading` - All headings
 - `.content-paragraph` - Paragraphs
 - `.content-image` - Images and captions
+- `.content-video` - Videos (also has `.content-image` class)
 - `.content-list` - Lists
 - `.content-quote` - Blockquotes
 - `.content-code` - Code blocks

@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard'
 import '../styles/home.css'
 
 const Home = () => {
-  const featuredProjects = projects.slice(0, 2)
+  const featuredProjects = projects.slice(0, 3)
 
   return (
     <section className="page home">
