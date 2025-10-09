@@ -1,9 +1,11 @@
 import bobImage from '../assets/projects/bob/bobImage.jpg'
 import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
+import crossfitImage from '../assets/projects/crossfit/functional_block_steps.png'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
 import bobModel3DContent from '../content/3d-model-minion'
 import zombieCommanderContent from '../content/zombie-commander'
+import crossfitContent from '../content/crossfit'
 
 export type Project = {
   slug: string
@@ -36,23 +38,6 @@ const projects: Project[] = [
     content: portfolioWebsiteContent,
   },
   {
-    slug: '3d-model-minion',
-    title: 'Bob 3D Rigged Model',
-    summary: 'Complete 3D character creation workflow: sculpting, retopology, and rigging.',
-    description:
-      'Full production pipeline for creating Bob the Minion in Blender 4.0. Starting from reference images, I sculpted high-detail organic forms using a digital pen tablet, performed clean retopology for animation-ready geometry, and implemented a complete rigging system with Rigify for expressive character animation.',
-    technologies: ['Blender 4.0', '3D Modeling', 'Digital Sculpting', 'Retopology', 'Character Rigging', 'Rigify'],
-    highlights: [
-      'High-detail sculpting with digital pen tablet for organic character forms',
-      'Optimized retopology with clean edge flow for animation performance',
-      'Complete Rigify-based rig with facial controls for expressive animation',
-      'Non-destructive workflow with organized scene hierarchy',
-    ],
-    date: '2023',
-    coverImage: bobImage,
-    content: bobModel3DContent,
-  },
-  {
     slug: 'zombie-commander',
     title: 'Zombie Commander',
     summary: 'An asymmetric multiplayer game where one player commands massive zombie hordes while survivors fight to complete objectives.',
@@ -71,6 +56,42 @@ const projects: Project[] = [
     liveUrl: '',
     repoUrl: '',
     content: zombieCommanderContent,
+  },
+  {
+    slug: '3d-model-minion',
+    title: 'Bob 3D Rigged Model',
+    summary: 'Complete 3D character creation workflow: sculpting, retopology, and rigging.',
+    description:
+      'Full production pipeline for creating Bob the Minion in Blender 4.0. Starting from reference images, I sculpted high-detail organic forms using a digital pen tablet, performed clean retopology for animation-ready geometry, and implemented a complete rigging system with Rigify for expressive character animation.',
+    technologies: ['Blender 4.0', '3D Modeling', 'Digital Sculpting', 'Retopology', 'Character Rigging'],
+    highlights: [
+      'High-detail sculpting with digital pen tablet for organic character forms',
+      'Optimized retopology with clean edge flow for animation performance',
+      'Complete Rigify-based rig with facial controls for expressive animation',
+      'Non-destructive workflow with organized scene hierarchy',
+    ],
+    date: '2023',
+    coverImage: bobImage,
+    content: bobModel3DContent,
+  },
+  {
+    slug: 'crossfit',
+    title: 'CrossFit Tracker',
+    summary: 'A full-stack workout planning and tracking application with intelligent validation for CrossFit athletes.',
+    description:
+      'Built a comprehensive workout management platform using FastAPI and Next.js. Features include a sophisticated template system with functional blocks (workouts, exercises, rest, choices), real-time validation engine, and secure multi-provider authentication. The application enables athletes to create complex workout structures with intelligent validation ensuring physiologically sound training plans. Future iterations will incorporate AI-powered analytics for personalized training insights.',
+    technologies: ['FastAPI', 'Next.js', 'React', 'TypeScript', 'PostgreSQL', 'SQLAlchemy', 'Docker', 'Nginx'],
+    highlights: [
+      'Testing suite with 209 passing tests ensuring reliability',
+      'Intelligent workout validation system catching errors',
+      'Hierarchical functional block system mirroring real CrossFit programming',
+      'Secure authentication with JWT and planned OAuth 2.0 integration (Google, Microsoft)',
+      'Advanced exercise database with filtering by type, difficulty, equipment, and muscle groups',
+      'Containerized architecture with Docker for consistent deployment',
+    ],
+    date: '2025',
+    coverImage: crossfitImage,
+    content: crossfitContent,
   },
 ]
 

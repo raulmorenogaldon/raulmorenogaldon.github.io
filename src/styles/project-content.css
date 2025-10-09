@@ -4,6 +4,8 @@
   position: relative;
   padding-top: 3rem;
   margin-top: 2rem;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .project-content-wrapper::before {
@@ -67,7 +69,7 @@
   border: 1px solid var(--border-light);
   object-fit: contain;
   /* Limit maximum size to prevent oversized images */
-  max-height: 600px;
+  max-height: 1000px;
 }
 
 .content-image figcaption {
@@ -136,12 +138,14 @@
   border-radius: 8px;
   overflow: hidden;
   background: #1e1e1e;
+  max-width: 100%;
 }
 
 .content-code pre {
   margin: 0;
   padding: 1.5rem;
   overflow-x: auto;
+  max-width: 100%;
 }
 
 .content-code code {
