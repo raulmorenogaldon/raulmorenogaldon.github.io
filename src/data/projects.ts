@@ -1,11 +1,13 @@
 import bobImage from '../assets/projects/bob/bobImage.jpg'
 import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
 import crossfitImage from '../assets/projects/crossfit/functional_block_steps.png'
+import vikingImage from '../assets/projects/viking/boat.png'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
 import bobModel3DContent from '../content/3d-model-minion'
 import zombieCommanderContent from '../content/zombie-commander'
 import crossfitContent from '../content/crossfit'
+import vikingContent from '../content/viking'
 
 export type Project = {
   slug: string
@@ -92,6 +94,23 @@ const projects: Project[] = [
     date: '2025',
     coverImage: crossfitImage,
     content: crossfitContent,
+  },
+  {
+    slug: 'viking',
+    title: 'Viking Management Game',
+    summary: 'A multiplayer 2D viking clan management game combining strategic resource management with tactical raid missions.',
+    description:
+      'Built a multiplayer viking management game using Unity 2022 LTS and Netcode for GameObjects. Players command their own viking clan, manage village resources, recruit warriors, and embark on strategic raids. Features a complete mission system with multiple stages, resource management mechanics, and networked multiplayer connectivity. The game showcases hand-drawn artwork by Lethkorias and implements Unity\'s GameObject component system for modular game architecture.',
+    technologies: ['Unity 2022', 'C#', 'Netcode for GameObjects', 'GameObject System', '2D Game Development'],
+    highlights: [
+      'Multiplayer functionality with village synchronization using Netcode for GameObjects',
+      'Mission system with multiple stages including journey, combat, and outcome phases',
+      'Strategic resource management with food, soldiers, gold, and morale tracking',
+      'Dynamic world map with distance-based raid duration calculations',
+    ],
+    date: '2023',
+    coverImage: vikingImage,
+    content: vikingContent,
   },
 ]
 
