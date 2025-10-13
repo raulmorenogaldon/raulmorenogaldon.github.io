@@ -10,7 +10,7 @@ const Resume = () => {
       <section className="summary summary--full-width">
         <h2>Professional Summary</h2>
         <p>
-          I’m a gameplay / AI programmer transitioning from cloud and HPC engineering, eager to start my first studio role. In personal projects I’ve used Unity DOTS/ECS to build a 3D multiplayer FPS prototype — server-authoritative networking, synchronized animation and server-side shot validation — that runs 1,000+ zombies, giving me some hands-on experience in large-scale performance and AI behavior. I’m advanced in Python and C, comfortable with C#, JavaScript and other languages (I love programming); I also bring strong CI/CD and realtime optimization experience, systems thinking, and a fast-learning, can-do attitude ready to contribute to gameplay and AI development.
+          I’m a gameplay / networking / AI programmer transitioning from cloud and HPC engineering, eager to start my first studio role. In personal projects I’ve used Unity DOTS/ECS to build a 3D multiplayer FPS prototype — server-authoritative networking, synchronized animation and server-side shot validation — that runs 1,000+ zombies, giving me some hands-on experience in large-scale performance and AI behavior. I’m advanced in Python and C, comfortable with C#, JavaScript and other languages (I love programming); I also bring strong CI/CD and realtime optimization experience, systems thinking, and a fast-learning, can-do attitude ready to contribute to gameplay and AI development.
         </p>
       </section>
 

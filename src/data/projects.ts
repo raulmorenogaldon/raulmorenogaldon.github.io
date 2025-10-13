@@ -2,6 +2,7 @@ import bobImage from '../assets/projects/bob/bobImage.jpg'
 import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
 import crossfitImage from '../assets/projects/crossfit/functional_block_steps.png'
 import vikingImage from '../assets/projects/viking/boat.png'
+import gproImage from '../assets/projects/gpro/gpro.png'
 import domoticsImage from '../assets/projects/domotics/domotics.png'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
@@ -9,6 +10,7 @@ import bobModel3DContent from '../content/3d-model-minion'
 import zombieCommanderContent from '../content/zombie-commander'
 import crossfitContent from '../content/crossfit'
 import vikingContent from '../content/viking'
+import gproContent from '../content/gpro'
 import domoticsContent from '../content/domotics'
 
 export type Project = {
@@ -115,12 +117,32 @@ const projects: Project[] = [
     content: vikingContent,
   },
   {
+    slug: 'gpro',
+    title: 'GPRO Manager',
+    summary: 'A Python automation tool that transforms hours of manual F1 race management into a 5-minute streamlined workflow.',
+    description:
+      'Built a comprehensive CLI application for Grand Prix Racing Online (GPRO) that automates data extraction, optimal car setup calculations, and race weekend management. Uses web scraping to gather driver stats, track conditions, and financial data, then applies Pandas-based iterative optimization to calculate perfect setups within driver comfort ranges. The system automatically handles Practice, Q1, Q2, and Race configurations with adaptive dry/wet weather strategies. All data persists in PostgreSQL for historical analytics and performance tracking across seasons.',
+    technologies: ['Python', 'PostgreSQL', 'Web Scraping', 'Pandas', 'BeautifulSoup4', 'Data Analytics'],
+    highlights: [
+      'Reduced race preparation time from multiple hours to under 5 minutes per weekend',
+      'Web scraping system extracting driver stats, track data, and financial information from authenticated sessions',
+      'Intelligent setup calculations using Pandas for iterative optimization within driver comfort ranges',
+      'Automated Q1/Q2 execution by crafting POST requests that mimic browser behavior',
+      'PostgreSQL database enabling historical tracking, change detection, and game mechanics analytics',
+      'Adaptive weather handling with automatic dry/wet setup adjustments',
+      'Maintained Amateur division effortlessly since Season 87-88 with minimal time investment',
+    ],
+    date: '2022',
+    coverImage: gproImage,
+    content: gproContent,
+  },
+  {
     slug: 'domotics',
     title: 'Smart Home Automation System',
     summary: 'A fully automated smart home built with Home Assistant, featuring intelligent lighting, climate control, security, and voice-activated window covers.',
     description:
       'Designed and implemented a home automation system using Home Assistant on Raspberry Pi with Docker. Features include intelligent window covers with voice control via Alexa, adaptive lighting with presence detection, sophisticated climate control with multiple operating modes, and automated security with geolocation-based alarm management. The system uses Zigbee protocol for device communication and follows DevOps practices with infrastructure-as-code configuration.',
-    technologies: ['Home Assistant', 'Docker', 'Zigbee', 'MQTT', 'AWS Lambda', 'Alexa', 'NGINX', 'Raspberry Pi'],
+    technologies: ['Home Assistant', 'Docker', 'Zigbee', 'MQTT', 'AWS Lambda', 'Alexa', 'Nginx', 'Raspberry Pi'],
     highlights: [
       'Voice-activated window covers with Alexa integration via custom AWS Lambda function',
       'Adaptive lighting system with presence detection and circadian rhythm adjustments',
