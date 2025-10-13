@@ -2,12 +2,14 @@ import bobImage from '../assets/projects/bob/bobImage.jpg'
 import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
 import crossfitImage from '../assets/projects/crossfit/functional_block_steps.png'
 import vikingImage from '../assets/projects/viking/boat.png'
+import domoticsImage from '../assets/projects/domotics/domotics.png'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
 import bobModel3DContent from '../content/3d-model-minion'
 import zombieCommanderContent from '../content/zombie-commander'
 import crossfitContent from '../content/crossfit'
 import vikingContent from '../content/viking'
+import domoticsContent from '../content/domotics'
 
 export type Project = {
   slug: string
@@ -111,6 +113,25 @@ const projects: Project[] = [
     date: '2023',
     coverImage: vikingImage,
     content: vikingContent,
+  },
+  {
+    slug: 'domotics',
+    title: 'Smart Home Automation System',
+    summary: 'A fully automated smart home built with Home Assistant, featuring intelligent lighting, climate control, security, and voice-activated window covers.',
+    description:
+      'Designed and implemented a home automation system using Home Assistant on Raspberry Pi with Docker. Features include intelligent window covers with voice control via Alexa, adaptive lighting with presence detection, sophisticated climate control with multiple operating modes, and automated security with geolocation-based alarm management. The system uses Zigbee protocol for device communication and follows DevOps practices with infrastructure-as-code configuration.',
+    technologies: ['Home Assistant', 'Docker', 'Zigbee', 'MQTT', 'AWS Lambda', 'Alexa', 'NGINX', 'Raspberry Pi'],
+    highlights: [
+      'Voice-activated window covers with Alexa integration via custom AWS Lambda function',
+      'Adaptive lighting system with presence detection and circadian rhythm adjustments',
+      'Multi-mode climate control with temperature sensors across all rooms',
+      'Geolocation-based security system with automatic alarm arming/disarming',
+      'Fully containerized architecture with Docker following infrastructure-as-code principles',
+      'Wall-mounted control panel for centralized home management',
+    ],
+    date: '2021',
+    coverImage: domoticsImage,
+    content: domoticsContent,
   },
 ]
 
