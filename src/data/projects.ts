@@ -1,3 +1,4 @@
+import portfolioImage from '../assets/projects/portfolio/front.png'
 import bobImage from '../assets/projects/bob/bobImage.jpg'
 import zombieCommanderImage from '../assets/projects/zombie-commander/zombie_commander.jpg'
 import crossfitImage from '../assets/projects/crossfit/functional_block_steps.png'
@@ -5,6 +6,7 @@ import vikingImage from '../assets/projects/viking/boat.png'
 import gproImage from '../assets/projects/gpro/gpro.png'
 import domoticsImage from '../assets/projects/domotics/domotics.png'
 import weddingSiteImage from '../assets/projects/boda/portada.jpg'
+import rtsmakerImage from '../assets/projects/rts/rts_render.png'
 import type { ProjectContent } from '../content/projectContentTypes'
 import portfolioWebsiteContent from '../content/portfolio-website'
 import bobModel3DContent from '../content/3d-model-minion'
@@ -14,6 +16,7 @@ import vikingContent from '../content/viking'
 import gproContent from '../content/gpro'
 import domoticsContent from '../content/domotics'
 import weddingSiteContent from '../content/boda'
+import rtsmakerContent from '../content/rtsmaker'
 
 export type Project = {
   slug: string
@@ -43,6 +46,7 @@ const projects: Project[] = [
     ],
     date: '2025',
     liveUrl: window.location.origin,
+    coverImage: portfolioImage,
     content: portfolioWebsiteContent,
   },
   {
@@ -176,6 +180,25 @@ const projects: Project[] = [
     date: '2021',
     coverImage: domoticsImage,
     content: domoticsContent,
+  },
+  {
+    slug: 'rtsmaker',
+    title: 'RTSMaker Engine',
+    summary: 'A real-time strategy game engine built from scratch in pure C, featuring ECS architecture, multiplayer networking, and collision avoidance.',
+    description:
+      'Developed a simple and uncompleted RTS game engine in C as a deep dive into low-level game development. Features a custom Entity-Component-System architecture for efficient entity processing, modular plugin system with runtime loading, ENet-based multiplayer with deterministic synchronization using fixed-point math, and Reciprocal Velocity Obstacles (RVO) for smooth unit collision avoidance. Demonstrates comprehensive understanding of memory management, data structures, networking protocols, and performance optimization at the CPU level.',
+    technologies: ['C', 'OpenGL', 'Networking', 'Allegro', 'CMake'],
+    highlights: [
+      'Custom Entity-Component-System (ECS) architecture implemented in pure C for cache-friendly performance',
+      'Modular plugin system with runtime loading of shared libraries (.dll/.so)',
+      'Multiplayer networking with ENet featuring delta-compression and deterministic synchronization',
+      'Reciprocal Velocity Obstacles (RVO) algorithm for smooth unit collision avoidance',
+      'Fixed-point mathematics ensuring deterministic behavior across networked clients',
+      'Message/event bus architecture that simplified networking implementation',
+    ],
+    date: '2017',
+    coverImage: rtsmakerImage,
+    content: rtsmakerContent,
   },
 ]
 
