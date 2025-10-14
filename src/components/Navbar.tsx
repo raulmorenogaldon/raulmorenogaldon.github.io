@@ -10,7 +10,9 @@ const navItems = [
 const Navbar = () => {
   return (
     <header className="navbar">
-      <div className="navbar__brand">My Portfolio</div>
+      <NavLink to="/" className="navbar__brand">
+        My Portfolio
+      </NavLink>
       <nav className="navbar__nav">
         {navItems.map(({ path, label }) => (
           <NavLink
