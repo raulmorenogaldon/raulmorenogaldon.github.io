@@ -7,11 +7,12 @@
     <title>My portfolio</title>
     <script type="text/javascript">
       // This script handles redirects from 404.html
+      // It restores the original path before React Router initializes
       (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replaceState(null, null, redirect);
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          history.replaceState(null, '', redirect);
         }
       })();
     </script>

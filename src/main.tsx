@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import Resume from './pages/Resume'
+import NotFound from './pages/NotFound'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: 'projects', element: <Projects /> },
       { path: 'projects/:slug', element: <ProjectDetail /> },
       { path: 'resume', element: <Resume /> },
+      { path: '*', element: <NotFound /> },
     ],
   },
 ])
