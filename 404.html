@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <script type="text/javascript">
-      // This script redirects 404s to index.html, preserving the path
-      // The index.html script will then handle the routing
-      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      // Store the requested path and redirect to root
+      // The root index.html will restore the path before React Router loads
+      sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
       location.replace('/');
     </script>
   </head>
