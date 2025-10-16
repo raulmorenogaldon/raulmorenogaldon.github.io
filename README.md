@@ -1,6 +1,6 @@
 # Portfolio Site
 
-# Personal portfolio website showcasing projects, skills, and contact information.
+A modern, performant portfolio website built with React, TypeScript, and Vite, featuring a custom content management system for showcasing software engineering projects with rich, detailed case studies.
 
 # Table of Contents
 - [Overview](#overview)
@@ -17,7 +17,14 @@
 
 ## Overview
 
-This repository contains the source code for my personal portfolio website built with React, TypeScript, and Vite. It highlights my projects, skills, and provides a way to get in touch.
+This repository contains a professional portfolio website that showcases diverse software engineering projects ranging from game development with Unity ECS to full-stack web applications, smart home automation, and low-level C programming. 
+
+Built with modern web technologies (React 19, TypeScript, Vite), the site features:
+- **Dynamic routing** with React Router for seamless navigation between Home, Projects, Project Details, and Resume pages
+- **Custom content system** using TypeScript modules for type-safe, structured project documentation
+- **Rich project presentations** with images, technical highlights, code snippets, and detailed case studies
+- **Responsive design** optimized for all device sizes
+- **Fast build and deployment** pipeline with Vite and GitHub Pages integration
 
 ## Demo
 
@@ -25,20 +32,36 @@ Live demo: https://raulmorenogaldon.github.io/
 
 ## Features
 
-- Responsive design
-- ...
+- **Multi-page application** with client-side routing (Home, Projects, Project Detail, Resume)
+- **Project showcase** with 9+ detailed case studies covering game dev, web apps, automation, and more
+- **Type-safe content system** with TypeScript interfaces for project metadata and rich content
+- **Responsive design** with CSS custom properties and mobile-first approach
+- **Component-based architecture** with reusable React components (Navbar, Footer, ProjectCard, ContentRenderer)
+- **Fast development** with Vite's hot module replacement
+- **Production-optimized** builds with code splitting and tree shaking
+- **Automated deployment** to GitHub Pages with single command
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- ESLint
+**Frontend Framework & Language:**
+- React 19 with React Router DOM for routing
+- TypeScript for type safety
+- Tailwind CSS 4 for styling
+
+**Build Tools & Development:**
+- Vite 7 (fast builds with hot module replacement)
+- ESLint with React plugins for code quality
+- Babel React Compiler for optimization
+
+**Deployment:**
+- GitHub Pages for hosting
+- GitHub CLI (`gh`) for automated deployment
 
 ## Prerequisites
 
-- Node.js (version 14 or higher)
-- npm or yarn
+- **Node.js** (version 18 or higher recommended)
+- **npm** or **yarn**
+- **GitHub CLI** (`gh`) for deployment (optional, only needed for publishing)
 
 ## Installation
 
