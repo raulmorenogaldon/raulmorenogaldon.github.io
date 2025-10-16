@@ -24,3 +24,6 @@ SOFTWARE.
 This license applies to all code, scripts, and configuration in this repository.
 It does not cover personal content such as photographs, resumes/CV,
 or any files located under `public/personal` or `src/assets/personal`.
+
+# Excluded Branches
+This license also does not cover the `gh-pages` branch, which contains compiled/built artifacts.

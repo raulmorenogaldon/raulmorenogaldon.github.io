@@ -21,7 +21,7 @@ This repository contains the source code for my personal portfolio website built
 
 ## Demo
 
-Live demo: https://your-domain.com
+Live demo: https://raulmorenogaldon.github.io/
 
 ## Features
 
@@ -43,8 +43,8 @@ Live demo: https://your-domain.com
 ## Installation
 
 ```bash
-git clone https://github.com/username/portfolio-site.git
-cd portfolio-site
+git clone https://github.com/raulmorenogaldon/raulmorenogaldon.github.io.git
+cd raulmorenogaldon.github.io
 npm install
 ```
 
@@ -64,23 +64,37 @@ Create an optimized production build:
 
 ```bash
 npm run build
-npm run preview
+```
+
+The built files will be generated in the `dist/` directory.
+
+## Deployment (Internal Reference)
+
+To deploy to GitHub Pages:
+
+```bash
+npm run deploy
 ```
 
 ## Project Structure
 
 ```
-portfolio-site/
+raulmorenogaldon.github.io/
 ├── public/           Static assets (images, icons)
 ├── src/
 │   ├── assets/       Images and SVGs
 │   ├── components/   Reusable React components
+│   ├── content/      Project content and data
+│   ├── data/         Project metadata
+│   ├── pages/        Page components
+│   ├── styles/       CSS stylesheets
 │   ├── App.css       Global styles
 │   ├── App.tsx       Root component
 │   ├── index.css     Base styles
-   └── main.tsx      Entry point
+│   └── main.tsx      Entry point
 ├── index.html        HTML template
 ├── vite.config.ts    Vite configuration
+├── tsconfig.json     TypeScript configuration
 └── package.json      Project dependencies and scripts
 ```
 
@@ -92,8 +106,8 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Excluded Personal Content
+### ⚠️ Excluded Personal Content
 
 This license applies to all code, scripts, and configuration in this repository.
-It does not cover personal content such as photographs, resumes/CV,
+It does **not** cover personal content such as photographs, resumes/CV,
 or any files located under `public/personal` or `src/assets/personal`.
