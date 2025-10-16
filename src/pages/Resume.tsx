@@ -79,7 +79,7 @@ const Resume = () => {
             <p>
               <span>LinkedIn</span>
               <a
-                href="https://www.linkedin.com/in/your-profile"
+                href="https://www.linkedin.com/in/raulmorenogaldon"
                 target="_blank"
                 rel="noreferrer"
               >
